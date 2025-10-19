@@ -1,33 +1,99 @@
 
-<!doctype html><html lang="ar" dir="rtl">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>اتصل بنا</title>
-<link rel="icon" href="">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>اتصل بنا | المشروع الجزائري للتفكير والسياسات</title>
+<link rel="icon" href="data:,">
 <style>
-:root{--blue:#1166ff;--border:#e6edff;}
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cairo,Noto Naskh Arabic,Arial;background:#f7faff;color:#0b2a64;margin:0;direction:rtl}
-.container{max-width:1000px;margin:40px auto;padding:0 16px}
-.card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:16px;box-shadow:0 12px 28px rgba(17,102,255,.1)}
-h1{margin:0 0 12px}
-.grid{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-@media(max-width:900px){.grid{grid-template-columns:1fr}}
-.map iframe{width:100%;height:360px;border:0;border-radius:14px}
-.item{display:flex;gap:10px;align-items:flex-start}
-.item b{min-width:96px;display:inline-block}
-</style></head>
+:root{--ink:#0f1a34;--muted:#455a88;--blue:#0f56ff;--blue2:#79a6ff;--bg:#f4f6fa;--card:#fff;--border:#e6ebf3;--shadow:0 16px 40px rgba(15,86,255,.12)}
+*{box-sizing:border-box} html,body{height:100%}
+body{
+  margin:0;font-family:"Tajawal","Cairo",system-ui,Segoe UI,Roboto,sans-serif;color:var(--ink);line-height:1.9;overflow-x:hidden;
+  background:
+    radial-gradient(1200px 600px at 95% -10%, rgba(15,86,255,.06), transparent 60%),
+    radial-gradient(1000px 500px at -10% 110%, rgba(15,86,255,.05), transparent 60%),
+    linear-gradient(180deg,#f7faff,var(--bg));
+}
+.container{max-width:1100px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand-badge{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(180deg,var(--blue),var(--blue2));color:#fff;font-weight:900;box-shadow:var(--shadow)}
+.brand-title{font-weight:900}
+.nav a{text-decoration:none;color:var(--ink);font-weight:800;padding:8px 10px;border-radius:10px}
+.nav a:hover{background:#eef4ff}
+.hero{background:linear-gradient(180deg,#0b3d99,#0a2e7a);color:#fff;padding:38px 0 26px;position:relative;overflow:hidden}
+.hero h1{margin:0 0 8px;font-size:34px;font-weight:900;animation:pop .8s ease both}
+.hero p{margin:0;opacity:.95}
+@keyframes pop{from{transform:translateY(8px);opacity:0}to{transform:none;opacity:1}}
+.wrap{padding:26px 0 40px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:22px;box-shadow:var(--shadow);overflow:hidden;display:grid;grid-template-columns:1.2fr 1fr}
+@media(max-width:960px){.card{grid-template-columns:1fr}}
+.map{min-height:420px}
+.map iframe{width:100%;height:100%;display:block;border:0}
+.info{padding:16px 18px 20px}
+.info h2{margin:0 0 8px;font-size:28px;font-weight:900}
+.item{display:flex;gap:10px;align-items:center;margin:.5rem 0}
+.badge{background:#f2f6ff;border:1px solid var(--border);border-radius:10px;padding:6px 10px;font-weight:800;color:#2a4572;display:inline-flex;gap:8px;align-items:center}
+a.link{text-decoration:none;color:#1f3b73}
+.whatsapp{display:inline-flex;align-items:center;gap:10px;margin-top:14px;text-decoration:none;background:#25D366;color:#fff;padding:12px 16px;border-radius:12px;font-weight:900;box-shadow:0 8px 18px rgba(37,211,102,.3)}
+.whatsapp svg{width:20px;height:20px;fill:#fff}
+footer{border-top:1px solid var(--border);padding:18px 0;color:#5b6a82;text-align:center}
+</style>
+</head>
 <body>
-<div class="container card">
-  <h1>اتصل بنا</h1>
-  <div class="grid">
-    <div>
-      <div class="item"><b>الهاتف:</b><span>+213561849044</span></div>
-      <div class="item"><b>البريد:</b><span>projectparp@gmail.com</span></div>
-      <div class="item"><b>العنوان:</b><span>جسر قسنطينة، الجزائر العاصمة</span></div>
-      <div class="item"><b>الموقع:</b><a href="https://maps.app.goo.gl/rMiuyA7yCXweDje8A" target="_blank">افتح على خرائط Google</a></div>
-    </div>
-    <div class="map">
-      <iframe src="https://www.google.com/maps?q=36.7089157,3.0847259&output=embed" loading="lazy"></iframe>
-    </div>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" title="المشروع الجزائري للتفكير والسياسات">
+      <div class="brand-badge">مش</div>
+      <div>
+        <div class="brand-title">المشروع الجزائري للتفكير والسياسات</div>
+        <small>نرحّب بتواصلكم</small>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html">الصفحة الرئيسية</a>
+      <a href="courses.html">دورات المركز</a>
+      <a href="articles.html">مقالات المركز</a>
+      <a href="forum.html">المنتدى السياسي</a>
+      <a href="contact.html">اتصل بنا</a>
+    </nav>
   </div>
-</div>
-</body></html>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>اتصل بنا</h1>
+    <p>نسعد باستقبال استفساراتكم واقتراحاتكم — تواصل معنا مباشرة عبر واتساب.</p>
+  </div>
+</section>
+
+<main class="container wrap">
+  <section class="card">
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps?q=P35M%2BHV9%20Djasr%20Kasentina&output=embed"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="info">
+      <h2>بيانات التواصل</h2>
+      <div class="item"><span class="badge">📞 الهاتف</span><a class="link" href="tel:+213561849044">+213561849044</a></div>
+      <div class="item"><span class="badge">✉️ البريد</span><a class="link" href="mailto:projectparp@gmail.com">projectparp@gmail.com</a></div>
+      <div class="item"><span class="badge">📍 العنوان</span><span>جسر قسنطينة، الجزائر العاصمة</span></div>
+      <div class="item"><span class="badge">🗺️ الموقع</span><a class="link" href="https://maps.google.com/?q=جسر قسنطينة، الجزائر العاصمة" target="_blank" rel="noopener">افتح على خرائط Google</a></div>
+
+      <a class="whatsapp" href="https://wa.me/213561849044?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%20%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1%D9%8A%20%D9%84%D9%84%D8%AA%D9%81%D9%83%D9%8A%D8%B1%20%D9%88%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D8%A7%D8%AA" target="_blank" rel="noopener" title="راسلنا عبر واتساب">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.53c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.33-.8-.71-1.35-1.58-1.51-1.85-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01s-.48.07-.73.34c-.25.27-.96.94-.96 2.28s.98 2.65 1.11 2.83c.14.18 1.93 2.95 4.68 4.03.65.28 1.15.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.6-.65 1.83-1.27.23-.62.23-1.15.16-1.27-.07-.12-.25-.2-.52-.34z"/><path d="M26.02 5.98C23.2 3.16 19.71 1.6 16 1.6 8.61 1.6 2.8 7.41 2.8 14.8c0 2.31.6 4.56 1.74 6.55L2 30.4l9.25-2.43c1.92 1.05 4.08 1.6 6.28 1.6 7.39 0 13.2-5.81 13.2-13.2 0-3.52-1.37-6.83-3.71-9.19zm-10.77 21.3c-2.07 0-4.11-.56-5.89-1.61l-.42-.25-5.49 1.44 1.47-5.35-.27-.44c-1.06-1.74-1.61-3.75-1.61-5.82 0-6.08 4.95-11.03 11.03-11.03 2.95 0 5.73 1.15 7.82 3.24 2.09 2.09 3.24 4.88 3.24 7.82 0 6.08-4.95 11.03-11.03 11.03z"/></svg>
+        راسلنا عبر واتساب
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 المشروع الجزائري للتفكير والسياسات — جميع الحقوق محفوظة.
+</footer>
+</body>
+</html>
